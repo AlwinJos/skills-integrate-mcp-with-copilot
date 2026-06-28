@@ -31,6 +31,11 @@ A super simple FastAPI application that allows students to view and sign up for 
 | ------ | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
 | GET    | `/activities`                                                     | Get all activities with their details and current participant count |
 | POST   | `/activities/{activity_name}/signup?email=student@mergington.edu` | Sign up for an activity                                             |
+| POST   | `/users/register`                                                 | Register a new user account                                         |
+| POST   | `/token`                                                          | Authenticate and retrieve a bearer token                            |
+| GET    | `/users/me`                                                       | Get current authenticated user details                              |
+| POST   | `/users/me/profile`                                               | Update the authenticated user profile                               |
+| GET    | `/users/me/profile`                                               | Get the authenticated user profile                                  |
 
 ## Data Model
 
